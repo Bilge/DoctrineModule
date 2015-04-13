@@ -1,5 +1,5 @@
 {
-    "name":        "doctrine/doctrine-module",
+    "name":        "bilge/doctrine-module",
     "description": "Zend Framework 2 Module that provides Doctrine basic functionality required for ORM and ODM modules",
     "type":        "library",
     "license":     "MIT",
@@ -28,6 +28,10 @@
             "name": "Michaël Gallego",
             "email": "mic.gallego@gmail.com",
             "homepage": "http://www.michaelgallego.fr"
+        },
+        {
+            "name": "Bilge",
+            "email": "bilge@scriptfusion.com"
         }
     ],
     "minimum-stability": "dev",
@@ -56,12 +60,10 @@
             "DoctrineModule\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.9.x-dev"
-        }
-    },
     "bin": [
         "bin/doctrine-module"
-    ]
+    ],
+    "replace": {
+        "doctrine/doctrine-module": "^0.8"
+    }
 }
